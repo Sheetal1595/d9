@@ -16,6 +16,7 @@
     ],
     "require": {
         "composer/installers": "^1.9",
+        "cweagans/composer-patches": "^1.7",
         "drupal/advancedqueue": "^1.0@RC",
         "drupal/audit_log": "^3.0@alpha",
         "drupal/block_aria_landmark_roles": "^2.0",
@@ -40,7 +41,8 @@
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
             "drupal/core-vendor-hardening": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "cweagans/composer-patches": true
         },
         "sort-packages": true
     },

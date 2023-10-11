@@ -1,0 +1,10 @@
+diff --git a/modules/custom/custom_patch/custom_patch.info.yml b/modules/custom/custom_patch/custom_patch.info.yml
+index 82e71cf7..004f79c1 100644
+--- a/modules/custom/custom_patch/custom_patch.info.yml
++++ b/modules/custom/custom_patch/custom_patch.info.yml
+@@ -13,4 +13,4 @@ index 49605c9b..e69de29b 100644
+ --description: 'Custom Patch Module'
+ --package: Custom
+ --version: 1.0
+---core_version_requirement: ^8 || ^9
++--core_version_requirement:    ^9

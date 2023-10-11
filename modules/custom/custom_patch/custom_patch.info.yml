@@ -1,0 +1,6 @@
+name: Custom Patch Module
+type: module
+description: 'Custom Patch Module'
+package: Custom
+version: 1.0
+core_version_requirement: ^8 || ^9

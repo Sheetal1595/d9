@@ -1,0 +1,6 @@
+services:
+  contactus.event_subscriber:
+    class: Drupal\contactus\EventSubscriber\ContactusSubscriber
+    arguments: ['@messenger']
+    tags:
+      - { name: event_subscriber }

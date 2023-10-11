@@ -1,0 +1,32 @@
+<?php
+
+// Crete unique title in article mode
+
+use \Drupal\Core\Database;
+
+function content_module_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+ 
+    if($form_id == 'node_article_form' || $form_id == 'node_article_edit_form' ) {
+    //    $title = $form["title"]["widget"]["#field_name"];
+
+      // Check for duplicates
+        $form['#validate'][] = 'check_node_exists';
+       
+    }
+}
+function check_node_exists($form, \Drupal\Core\Form\FormStateInterface &$form_state) {
+
+    $title = $form_state->getValue('title')[0]['value'];
+    $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+  
+    $database = \Drupal::database();
+
+    $node_title =$database->query('SELECT title FROM `node_field_data` WHERE title = :title ', [':title' => $title])->fetchField();
+   
+    if ($node_title == $title) {
+   
+      $form_state->setErrorByName('title', t('Node of the given title and language already exists.'));
+  
+    }
+  
+}

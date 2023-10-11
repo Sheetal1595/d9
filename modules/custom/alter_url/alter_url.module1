@@ -1,0 +1,13 @@
+<?php 
+/**
+ * Implements hook_pathauto_alias_alter().
+ */
+function alter_url_pathauto_alias_alter(&$alias, array &$context) {
+   // Check if the content is node and the bundle is an article. 
+   if ($context['module'] === 'node' && $context['bundle'] === 'article') {
+    /** @var \Drupal\node\Entity\Node $node */
+    $node = $context['data']['node'];
+    dpm($node );
+
+  }
+}

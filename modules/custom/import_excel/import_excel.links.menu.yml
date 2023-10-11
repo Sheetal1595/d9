@@ -1,0 +1,6 @@
+import_excel.settings_form:
+  title: import_excel
+  description: Configure import_excel.
+  parent: system.admin_config_system
+  route_name: import_excel.settings_form
+  weight: 10

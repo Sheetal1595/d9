@@ -1,0 +1,10 @@
+entity.My_profile.settings:
+  title: 'My_profile'
+  description: 'Configure a My_profile entity type.'
+  route_name:  entity.My_profile.settings
+  parent: system.admin_structure
+entity.My_profile.collection:
+  title: 'My_profiles'
+  description: 'List of my_profiles.'
+  route_name: entity.My_profile.collection
+  parent: system.admin_content

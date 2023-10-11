@@ -1,0 +1,16 @@
+content_entity_type.example:
+  path: '/content-entity-type/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\content_entity_type\Controller\ContentEntityTypeController::build'
+  requirements:
+    _permission: 'access content'
+
+
+entity.My_Profile.settings:
+  path: 'admin/structure/My-Profile'
+  defaults:
+    _form: '\Drupal\content_entity_type\Form\MyProfileSettingsForm'
+    _title: 'My_Profile'
+  requirements:
+    _permission: 'administer profile my_profile'

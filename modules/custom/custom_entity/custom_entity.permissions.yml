@@ -1,0 +1,11 @@
+administer my_profile:
+  title: 'Administer my_profile settings'
+  restrict access: true
+delete my_profile:
+  title: Delete my_profile
+create my_profile:
+  title: Create my_profile
+view my_profile:
+  title: View my_profile
+edit my_profile:
+  title: Edit my_profile

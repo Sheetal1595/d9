@@ -1,0 +1,9 @@
+# In this module I had return the custom code to import excel file using module :
+# :  composer require phpoffice/phpspreadsheet
+
+name: import_excel
+type: module
+description: The description.
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9

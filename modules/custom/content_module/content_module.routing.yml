@@ -1,0 +1,7 @@
+content_module.content:
+  path: '/content/page'
+  defaults: 
+    _controller: '\Drupal\content_module\Controller\ContentController::content'
+    _title: 'content to My Module in Drupal 9'
+  requirements: 
+    _permission: 'access content'     

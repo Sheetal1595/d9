@@ -1,0 +1,5 @@
+name: [A[A[A[B[B[Bcontent_entity_type
+type: module
+description: NA
+package: Custom
+core_version_requirement: ^9 || ^10

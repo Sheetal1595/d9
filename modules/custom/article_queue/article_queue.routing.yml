@@ -1,0 +1,15 @@
+article_queue.route_machine_name:
+    path: '/article_form'
+    defaults:
+        _form: 'Drupal\article_queue\Form\ArticleSettingsForm'
+        _title: 'Personal information'
+    requirements:
+      _permission: 'access content'
+
+article_queue.controller:
+  path: '/article_queue'
+  defaults:
+    _controller: '\Drupal\article_queue\Controller\ArticleController::qControllerMethod'
+    _title: 'My Custom Page Title'
+  requirements:
+    _permission: 'access content' 

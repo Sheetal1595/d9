@@ -1,0 +1,5 @@
+My_profile.add_form:
+  title: 'Add my_profile'
+  route_name: entity.My_profile.add_form
+  appears_on:
+    - entity.My_profile.collection

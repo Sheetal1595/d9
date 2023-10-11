@@ -1,0 +1,84 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for custom_content_entity_example module.
+ */
+
+use Drupal\Core\Render\Element;
+use Drupal\custom_content_entity_example\Entity\Profile;
+use Drupal\user\UserInterface;
+
+/**
+ * Implements hook_theme().
+ */
+function custom_content_entity_example_theme() {
+  return [
+    'profile' => [
+      'render element' => 'elements',
+    ],
+  ];
+}
+
+/**
+ * Prepares variables for profile templates.
+ *
+ * Default template: profile.html.twig.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - elements: An associative array containing the profile information and any
+ *     fields attached to the entity.
+ *   - attributes: HTML attributes for the containing element.
+ */
+function template_preprocess_profile(array &$variables) {
+  $variables['view_mode'] = $variables['elements']['#view_mode'];
+  foreach (Element::children($variables['elements']) as $key) {
+    $variables['content'][$key] = $variables['elements'][$key];
+  }
+}
+
+/**
+ * Implements hook_user_cancel().
+ */
+function custom_content_entity_example_user_cancel($edit, UserInterface $account, $method) {
+  switch ($method) {
+    case 'user_cancel_block_unpublish':
+      // Unpublish profiles.
+      $storage = \Drupal::entityTypeManager()->getStorage('profile');
+      $profile_ids = $storage->getQuery()
+        ->condition('uid', $account->id())
+        ->condition('status', 1)
+        ->execute();
+      foreach ($storage->loadMultiple($profile_ids) as $profile) {
+        $profile->set('status', FALSE);
+        $profile->save();
+      }
+      break;
+
+    case 'user_cancel_reassign':
+      // Anonymize profiles.
+      $storage = \Drupal::entityTypeManager()->getStorage('profile');
+      $profile_ids = $storage->getQuery()
+        ->condition('uid', $account->id())
+        ->execute();
+      foreach ($storage->loadMultiple($profile_ids) as $profile) {
+        $profile->setOwnerId(0);
+        $profile->save();
+      }
+      break;
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_predelete() for user entities.
+ */
+function custom_content_entity_example_user_predelete(UserInterface $account) {
+  // Delete profiles.
+  $storage = \Drupal::entityTypeManager()->getStorage('profile');
+  $profile_ids = $storage->getQuery()
+    ->condition('uid', $account->id())
+    ->execute();
+  $profiles = $storage->loadMultiple($profile_ids);
+  $storage->delete($profiles);
+}

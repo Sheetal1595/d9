@@ -1,0 +1,22 @@
+entity.My_Profile.settings:
+  title: 'Settings'
+  route_name: entity.My_Profile.settings
+  base_route: entity.My_Profile.settings
+entity.My_Profile.view:
+  title: 'View'
+  route_name: entity.My_Profile.canonical
+  base_route: entity.My_Profile.canonical
+entity.My_Profile.edit_form:
+  title: 'Edit'
+  route_name: entity.My_Profile.edit_form
+  base_route: entity.My_Profile.canonical
+entity.My_Profile.delete_form:
+  title: 'Delete'
+  route_name: entity.My_Profile.delete_form
+  base_route: entity.My_Profile.canonical
+  weight: 10
+entity.My_Profile.collection:
+  title: 'Profile[D[D[D[D[D[D[DMy_Profiles'
+  route_name: entity.My_Profile.collection
+  base_route: system.admin_content
+  weight: 10

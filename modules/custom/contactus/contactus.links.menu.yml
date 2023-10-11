@@ -1,0 +1,6 @@
+contactus.settings_form:
+  title: ContactUs
+  description: Configure ContactUs.
+  parent: system.admin_config_system
+  route_name: contactus.settings_form
+  weight: 10

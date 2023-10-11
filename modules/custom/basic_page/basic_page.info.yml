@@ -1,0 +1,7 @@
+# This Module is use to redirect pages. Here I try to create Twig Template 
+name: Basic Page Module
+type: module
+description: 'This is basic page module'
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9 ||^10

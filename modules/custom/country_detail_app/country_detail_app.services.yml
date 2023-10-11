@@ -1,0 +1,7 @@
+services:
+  logger.channel.country_detail_app:
+    parent: logger.channel_base
+    arguments: ['country_detail_app']
+  country_detail_app.default:
+    class: Drupal\country_detail_app\CountryDetailApp
+    arguments: ['@http_client']

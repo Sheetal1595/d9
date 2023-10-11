@@ -1,0 +1,6 @@
+name: Alter URL Module
+type: module
+description: 'This is Alter URL Module'
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9 ||^10

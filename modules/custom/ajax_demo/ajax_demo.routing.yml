@@ -1,0 +1,53 @@
+ajax_demo.ajax_demo:
+  path: '/ajax_demo'
+  defaults:
+    _form: '\Drupal\ajax_demo\Form\AjaxForm'
+    _title: 'Ajax Form for invole command'
+  requirements:
+    _permission: 'access content'
+    _access: 'TRUE'
+    
+ajax_demo.ajax_demo1:
+  path: '/uppercase'
+  defaults:
+    _form: '\Drupal\ajax_demo\Form\CodimthSimpleForm'
+    _title: 'Convert into Uppercase'
+  requirements:
+    _permission: 'access content'
+    _access: 'TRUE'
+
+ajax_demo.content:
+  path: '/ajax_example'
+  defaults:
+    _controller: '\Drupal\ajax_demo\Controller\ExampleController::content'
+    _title: 'Hello Sheetal'
+  requirements:
+    _permission: 'access content'
+    _access: 'TRUE'
+
+ajax_demo.result:
+  path: '/result'
+  defaults:
+    _controller: '\Drupal\ajax_demo\Controller\ExampleController::result'
+    _title: 'Hello Sheetal'
+  requirements:
+    _permission: 'access content'
+    _access: 'TRUE'
+
+ajax_demo.studentRegistration:
+  path: '/student-registration'
+  defaults:
+    _form: '\Drupal\ajax_demo\Form\RegistrationForm'
+    _title: 'Student Registration Form'
+  requirements:
+    _permission: 'access content'
+    _access: 'TRUE'
+
+ajax_demo.DependencyRegistrationForm:
+  path: '/dependency-registration'
+  defaults:
+    _form: '\Drupal\ajax_demo\Form\DependencyRegistrationForm'
+    _title: 'Dependency Registration Form'
+  requirements:
+    _permission: 'access content'
+    _access: 'TRUE'

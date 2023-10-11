@@ -1,0 +1,5 @@
+My_Profile.add_form:
+  title: 'Add profile[d[d[d[d[d[d[dmy_profile'
+  route_name: entity.My_Profile.add_form
+  appears_on:
+    - entity.My_Profile.collection

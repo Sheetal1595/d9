@@ -1,0 +1,5 @@
+name: Custom Drush
+type: module
+description: Drush Command for Custom Method
+core_version_requirement: ^8.8 || ^9
+package: 'Custom'

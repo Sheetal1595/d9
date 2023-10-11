@@ -1,0 +1,6 @@
+services:
+  import_excel.event_subscriber:
+    class: Drupal\import_excel\EventSubscriber\ImportExcelSubscriber
+    arguments: ['@messenger']
+    tags:
+      - { name: event_subscriber }

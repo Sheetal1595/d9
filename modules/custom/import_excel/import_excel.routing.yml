@@ -1,0 +1,23 @@
+import_excel.example:
+  path: '/import-excel/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\import_excel\Controller\ImportExcelController::build'
+  requirements:
+    _permission: 'access content'
+
+import_excel.settings_form:
+  path: '/admin/config/system/import-excel'
+  defaults:
+    _title: 'import_excel settings'
+    _form: 'Drupal\import_excel\Form\SettingsForm'
+  requirements:
+    _permission: 'administer import_excel configuration'
+
+import_excel.import_excel_form:
+  path: '/import_excel_form'
+  defaults:
+    _form: '\Drupal\import_excel\Form\ImportExcelForm'
+   
+  requirements:
+    _permission: 'access content' 

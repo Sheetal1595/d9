@@ -1,0 +1,5 @@
+name: Country Detail App
+type: module
+description: 'Country Detail App'
+package: Custom
+core_version_requirement: ^8 || ^9 ||^10

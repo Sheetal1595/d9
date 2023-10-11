@@ -1,0 +1,6 @@
+services:
+  multistep.event_subscriber:
+    class: Drupal\multistep\EventSubscriber\MultistepSubscriber
+    arguments: ['@messenger']
+    tags:
+      - { name: event_subscriber }

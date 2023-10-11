@@ -1,0 +1,40 @@
+/* .page-title
+{
+    color: red !important;
+}
+
+.views-field views-field-title{
+    font-weight: 700;
+    color: #1c1c1c;
+    margin-bottom: 45px;
+
+}
+
+
+.spv-popup-link spv_on_click{
+    width: 100px;
+} */
+
+.views-field-dropbutton {
+    display: inline-block;
+    font-size: 7px !important;
+    padding: 10px 28px 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: #7fad39;
+    letter-spacing: 2px;
+    border-radius: 90px;
+
+}
+.views-field-dropbutton-1{
+    display: inline-block;
+    font-size: 7px !important;
+    padding: 10px 28px 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: #7fad39;
+    letter-spacing: 2px;
+    border-radius: 90px;
+}

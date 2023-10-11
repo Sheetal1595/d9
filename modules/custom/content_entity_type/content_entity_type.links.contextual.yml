@@ -1,0 +1,10 @@
+entity.My_Profile.edit_form:
+  route_name: entity.My_Profile.edit_form
+  group: My_Profile
+  title: Edit
+
+entity.My_Profile.delete_form:
+  route_name: entity.My_Profile.delete_form
+  group: My_Profile
+  title: Delete
+  weight: 10

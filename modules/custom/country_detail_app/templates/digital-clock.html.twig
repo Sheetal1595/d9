@@ -1,0 +1,19 @@
+{#
+/**
+* @file
+* Default theme implementation to display a block
+* 
+*    @see template_preprocess_block()
+*   
+*    @ingroup themeable
+*
+*
+*/
+#}
+{% set classes = [
+    'clear-both',
+]%}
+
+<div{{ attributes.addClass(classes) }}>
+    <span id  = "digital-clock"></span>
+</div>

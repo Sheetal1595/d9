@@ -1,0 +1,37 @@
+<?php
+
+/**
+ * @file
+ * Contains ajax_demo.module.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function ajax_demo_help($route_name, RouteMatchInterface $route_match)
+{
+  switch ($route_name) {
+    // Main module help for the ajax_demo module.
+    case 'help.page.ajax_demo':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+
+function ajax_demo_form_alter(&$form, FormStateInterface $form_state, $form_id)
+{
+  
+  if ($form_id == 'codimth_form_api_ajax_demo' || $form_id == 'ajax_demo_form') {
+    $form['#attached']['library'][] = "ajax_demo/ajax_demo-library";
+  }
+}
+
+

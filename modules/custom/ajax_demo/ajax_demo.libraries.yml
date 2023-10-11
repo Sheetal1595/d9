@@ -1,0 +1,5 @@
+ajax_demo-library:
+  js:
+    js/example.js: {}
+  dependencies:
+    - core/drupal.ajax

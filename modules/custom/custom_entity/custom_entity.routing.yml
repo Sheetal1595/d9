@@ -1,0 +1,16 @@
+custom_entity.example:
+  path: '/custom-entity/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\custom_entity\Controller\CustomEntityController::build'
+  requirements:
+    _permission: 'access content'
+
+
+entity.My_profile.settings:
+  path: 'admin/structure/My-profile'
+  defaults:
+    _form: '\Drupal\custom_entity\Form\MyProfileSettingsForm'
+    _title: 'My_profile'
+  requirements:
+    _permission: 'administer my_profile'

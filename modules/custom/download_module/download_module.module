@@ -1,0 +1,19 @@
+<?php
+function download_module_theme($existing, $type, $theme, $path)
+{
+ return[
+ 'listpage' => [
+ 'template' => 'listpage',
+ 'variables' => array(
+ 'items' => [],
+ 'title' => ''
+ )
+ ],
+ ];
+ }
+
+function download_module_page_attachments(array &$attachments) {
+ // Unconditionally attach the download_module/custom library.
+ $attachments['#attached']['library'][] = 'download_module/custom';
+}
+?>

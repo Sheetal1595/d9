@@ -1,0 +1,26 @@
+
+
+contactus.settings_form:
+  path: '/admin/config/system/contactus'
+  defaults:
+    _title: 'ContactUs settings'
+    _form: 'Drupal\contactus\Form\SettingsForm'
+  requirements:
+    _permission: 'administer contactus configuration'
+
+
+contactus.contact_us_form:
+  path: '/contactus'
+  defaults:
+    _title: 'ContactUs Form'
+    _form: 'Drupal\contactus\Form\ContactUsForm'
+  requirements:
+    _permission: 'access content'
+
+contactus.DisplayController:
+  path: '/display'
+  defaults:
+    _controller: '\Drupal\contactus\Controller\DisplayController::getDetails'
+   
+  requirements:
+    _permission: 'access content'

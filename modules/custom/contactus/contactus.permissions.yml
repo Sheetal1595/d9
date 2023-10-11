@@ -1,0 +1,4 @@
+administer contactus configuration:
+  title: 'Administer contactus configuration'
+  description: 'Optional description.'
+  restrict access: true

@@ -1,0 +1,16 @@
+<h1>Table</h1>
+<table>
+    <tr>
+        <td>id</td>
+        <td>Firstname</td>
+        <td>Lastname</td>
+    </tr>
+    {% for rec in items %}
+        <tr>
+            <td>{{rec.id}}</td><br>
+            <td>{{rec.first_name}}</td><br>
+            <td>{{rec.last_name}}</td><br>
+        </tr>
+    {% endfor %}
+</table>
+

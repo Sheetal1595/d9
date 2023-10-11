@@ -1,0 +1,15 @@
+dependency_injection.welcome:
+  path: '/welcome/page'
+  defaults:
+    _controller: '\Drupal\dependency_injection\Controller\DependencyController::welcome'
+    _title: 'Welcome to My Module in Drupal 9'
+  requirements: 
+    _permission: 'access content'
+
+# dependency_injection.current_user:
+#   path: '/current/user'
+#   defaults:
+#     _form: '\Drupal\dependency_injection\Form\current_user::current_user'
+#     _title: 'Form'
+#   requirements: 
+#   _permission: 'access content'

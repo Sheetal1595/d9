@@ -1,0 +1,4 @@
+administer multistep configuration:
+  title: 'Administer multistep configuration'
+  description: 'Optional description.'
+  restrict access: true

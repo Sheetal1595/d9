@@ -1,0 +1,6 @@
+multistep.settings_form:
+  title: Multistep
+  description: Configure Multistep.
+  parent: system.admin_config_system
+  route_name: multistep.settings_form
+  weight: 10

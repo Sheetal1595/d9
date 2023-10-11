@@ -1,0 +1,5 @@
+services:
+  article_queue.service:
+    class: Drupal\article_queue\article_queueService
+    arguments:
+      - '@queue'

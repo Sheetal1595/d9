@@ -1,0 +1,44 @@
+
+<?php
+use Drupal\Core\Form\FormBase;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Ajax\AjaxResponse;
+use Drupal\Core\Ajax\HtmlCommand;
+use Drupal\Core\Ajax\InvokeCommand;
+use Drupal\Core\Ajax\AlertCommand;
+use Drupal\Core\Ajax\ReplaceCommand;
+use Drupal\Core\Ajax\OpenModalDialogCommand;
+use Drupal\taxonomy\Entity\Term;
+use Symfony\Component\HttpFoundation\RedirectResponse;
+use Drupal\Core\Url;
+use Drupal\alter_url\Controller\urlController;
+use Drupal\Core\Entity\EntityInterface;
+
+/**
+* Implements hook_entity_presave().
+*/
+function alter_url_entity_presave(EntityInterface $entity) {
+
+ 
+  if ($entity->getEntityTypeId() === 'node') {
+  
+    if ($entity->bundle() === 'article') {
+    
+      if ($texo = $entity->get('field_course_name')->getValue()) {
+          foreach ($texo as $data) {
+            $term = Term::load($data['target_id']);
+            $name = $term->getName();
+            $taxonomy_name = $term->bundle();
+           
+          }
+        }
+       // Build the new URL.
+      
+      $url = '/' . $taxonomy_name . '/' . $name;
+    
+      $entity->set('path', $url);
+
+       
+    }
+  }
+}

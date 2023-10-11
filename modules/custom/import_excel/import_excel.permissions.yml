@@ -1,0 +1,4 @@
+administer import_excel configuration:
+  title: 'Administer import_excel configuration'
+  description: 'Optional description.'
+  restrict access: true

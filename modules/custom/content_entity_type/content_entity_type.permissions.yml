@@ -1,0 +1,11 @@
+administer profile[d[d[d[d[d[d[dmy_profile:
+  title: 'Administer profile[d[d[d[d[d[d[dmy_profile settings'
+  restrict access: true
+delete profile[d[d[d[d[d[d[dmy_profile:
+  title: Delete profile[d[d[d[d[d[d[dmy_profile
+create profile[d[d[d[d[d[d[dmy_profile:
+  title: Create profile[d[d[d[d[d[d[dmy_profile
+view profile[d[d[d[d[d[d[dmy_profile:
+  title: View profile[d[d[d[d[d[d[dmy_profile
+edit profile[d[d[d[d[d[d[dmy_profile:
+  title: Edit profile[d[d[d[d[d[d[dmy_profile

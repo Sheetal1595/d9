@@ -1,0 +1,35 @@
+
+
+multistep.settings_form:
+  path: '/admin/config/system/multistep'
+  defaults:
+    _title: 'Multistep settings'
+    _form: 'Drupal\multistep\Form\SettingsForm'
+  requirements:
+    _permission: 'administer multistep configuration'
+
+multistep.multistep_form:
+  path: '/multistep-form'
+  defaults:
+    _form: '\Drupal\multistep\Form\MultistepForm'
+   
+  requirements:
+    _permission: 'access content'
+
+
+# multistep.display:
+#   path: '/display'
+#   defaults:
+#     _form: '\Drupal\multistep\Form\Display'
+   
+#   requirements:
+#     _permission: 'access content'
+
+
+multistep.DisplayController:
+  path: '/get-details'
+  defaults:
+    _controller: '\Drupal\multistep\Controller\DisplayController::getDetails'
+   
+  requirements:
+    _permission: 'access content'

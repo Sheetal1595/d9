@@ -1,0 +1,19 @@
+<?php
+
+/*
+implement hook theme 
+*/
+
+function multistep_theme($existing, $type, $theme ,$path){
+    return [
+      'my-template' => [
+        'template' => 'my-template',
+        'variables' => array(
+        'items' => [],
+        'title' => ''
+        )
+        ],
+ ];
+
+      
+}

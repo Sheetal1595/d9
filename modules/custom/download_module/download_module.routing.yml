@@ -1,0 +1,24 @@
+download_module.welcome:
+  path: '/downloadasset/{nid}'
+  defaults:
+    _controller: '\Drupal\download_module\Controller\DownloadController::download'
+    _title: 'Download and insert into database'
+  requirements: 
+    _permission: 'access content'
+
+
+# download_module.download-list:
+#   path: '/download-list
+#   defaults:
+#     _controller : '\Drupal\download_module\Controller\DownloadController::download-list'
+#     _title: 'Download and insert into database'
+#   requirements: 
+#     _permission: 'access content'
+
+download_module.downloadList:
+  path: '/downloadList'
+  defaults:
+    _controller: '\Drupal\download_module\Controller\DownloadController::downloadList'
+    _title: 'Download and insert into database'
+  requirements: 
+    _permission: 'access content'

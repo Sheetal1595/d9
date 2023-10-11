@@ -1,0 +1,12 @@
+<?php
+    function basic_page_theme($existing, $theme, $typ3, $path){
+        return [
+            'information-page' => [
+                'variables' => [ 
+                    'items' =>[],
+                    'title' =>'',
+                ]
+            ]
+        ];
+    }
+?>

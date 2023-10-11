@@ -932,6 +932,57 @@
             "install-path": "../consolidation/site-process"
         },
         {
+            "name": "cweagans/composer-patches",
+            "version": "1.7.3",
+            "version_normalized": "1.7.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cweagans/composer-patches.git",
+                "reference": "e190d4466fe2b103a55467dfa83fc2fecfcaf2db"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cweagans/composer-patches/zipball/e190d4466fe2b103a55467dfa83fc2fecfcaf2db",
+                "reference": "e190d4466fe2b103a55467dfa83fc2fecfcaf2db",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0 || ^2.0",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "composer/composer": "~1.0 || ~2.0",
+                "phpunit/phpunit": "~4.6"
+            },
+            "time": "2022-12-20T22:53:13+00:00",
+            "type": "composer-plugin",
+            "extra": {
+                "class": "cweagans\\Composer\\Patches"
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "cweagans\\Composer\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Cameron Eagans",
+                    "email": "me@cweagans.net"
+                }
+            ],
+            "description": "Provides a way to patch Composer packages.",
+            "support": {
+                "issues": "https://github.com/cweagans/composer-patches/issues",
+                "source": "https://github.com/cweagans/composer-patches/tree/1.7.3"
+            },
+            "install-path": "../cweagans/composer-patches"
+        },
+        {
             "name": "dflydev/dot-access-data",
             "version": "v3.0.2",
             "version_normalized": "3.0.2.0",
@@ -1628,7 +1679,7 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/advancedqueue"
             },
-            "install-path": "../../../d9/modules/contrib/advancedqueue"
+            "install-path": "../../modules/contrib/advancedqueue"
         },
         {
             "name": "drupal/audit_log",
@@ -1691,7 +1742,7 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/audit_log"
             },
-            "install-path": "../../../d9/modules/contrib/audit_log"
+            "install-path": "../../modules/contrib/audit_log"
         },
         {
             "name": "drupal/block_aria_landmark_roles",
@@ -1742,7 +1793,7 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/block_aria_landmark_roles"
             },
-            "install-path": "../../../d9/modules/contrib/block_aria_landmark_roles"
+            "install-path": "../../modules/contrib/block_aria_landmark_roles"
         },
         {
             "name": "drupal/core",
@@ -1912,7 +1963,7 @@
             "support": {
                 "source": "https://github.com/drupal/core/tree/9.5.11"
             },
-            "install-path": "../../../d9/core"
+            "install-path": "../../core"
         },
         {
             "name": "drupal/core-composer-scaffold",
@@ -2208,7 +2259,7 @@
                 "issues": "https://gitlab.com/drupalspoons/devel/-/issues",
                 "slack": "https://drupal.slack.com/archives/C012WAW1MH6"
             },
-            "install-path": "../../../d9/modules/contrib/devel"
+            "install-path": "../../modules/contrib/devel"
         },
         {
             "name": "drupal/queue_ui",
@@ -2294,7 +2345,7 @@
                 "source": "https://git.drupalcode.org/project/queue_ui",
                 "issues": "https://www.drupal.org/project/issues/queue_ui"
             },
-            "install-path": "../../../d9/modules/contrib/queue_ui"
+            "install-path": "../../modules/contrib/queue_ui"
         },
         {
             "name": "drupal/ultimate_cron",
@@ -2366,7 +2417,7 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/ultimate_cron"
             },
-            "install-path": "../../../d9/modules/contrib/ultimate_cron"
+            "install-path": "../../modules/contrib/ultimate_cron"
         },
         {
             "name": "drupal/views_bulk_operations",
@@ -2435,7 +2486,7 @@
                 "issues": "https://www.drupal.org/project/issues/views_bulk_operations?version=8.x",
                 "docs": "https://www.drupal.org/docs/8/modules/views-bulk-operations-vbo"
             },
-            "install-path": "../../../d9/modules/contrib/views_bulk_operations"
+            "install-path": "../../modules/contrib/views_bulk_operations"
         },
         {
             "name": "drush/drush",

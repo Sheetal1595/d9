@@ -1,0 +1,8 @@
+diff --git a/modules/custom/patch_module/my_patch.php b/modules/custom/patch_module/my_patch.php
+index 1c770608..d825bb62 100644
+--- a/modules/custom/patch_module/my_patch.php
++++ b/modules/custom/patch_module/my_patch.php
+@@ -1,2 +1,2 @@
+-Sheetal Chive
+ 
++Sangita Chive

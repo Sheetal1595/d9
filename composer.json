@@ -16,7 +16,7 @@
     ],
     "require": {
         "composer/installers": "^1.9",
-        "cweagans/composer-patches": "^1.7",
+        "cweagans/composer-patches": "~1.0",
         "drupal/advancedqueue": "^1.0@RC",
         "drupal/audit_log": "^3.0@alpha",
         "drupal/block_aria_landmark_roles": "^2.0",
@@ -49,8 +49,8 @@
     "extra": {
         "enable-patching": true,
         "patches": {
-            "drupal/custom_patch": {
-                "Comments are not filtered on language": "abc.patch"
+            "drupal/patch_module": {
+                "Comments are not filtered on language": "my_patch.patch"
             }
          },
         "drupal-scaffold": {

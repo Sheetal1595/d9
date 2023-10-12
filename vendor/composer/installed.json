@@ -125,41 +125,39 @@
         },
         {
             "name": "composer/installers",
-            "version": "v1.12.0",
-            "version_normalized": "1.12.0.0",
+            "version": "v2.2.0",
+            "version_normalized": "2.2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "d20a64ed3c94748397ff5973488761b22f6d3f19"
+                "reference": "c29dc4b93137acb82734f672c37e029dfbd95b35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/d20a64ed3c94748397ff5973488761b22f6d3f19",
-                "reference": "d20a64ed3c94748397ff5973488761b22f6d3f19",
+                "url": "https://api.github.com/repos/composer/installers/zipball/c29dc4b93137acb82734f672c37e029dfbd95b35",
+                "reference": "c29dc4b93137acb82734f672c37e029dfbd95b35",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.0 || ^2.0"
-            },
-            "replace": {
-                "roundcube/plugin-installer": "*",
-                "shama/baton": "*"
+                "composer-plugin-api": "^1.0 || ^2.0",
+                "php": "^7.2 || ^8.0"
             },
             "require-dev": {
                 "composer/composer": "1.6.* || ^2.0",
                 "composer/semver": "^1 || ^3",
                 "phpstan/phpstan": "^0.12.55",
                 "phpstan/phpstan-phpunit": "^0.12.16",
-                "symfony/phpunit-bridge": "^4.2 || ^5",
-                "symfony/process": "^2.3"
+                "symfony/phpunit-bridge": "^5.3",
+                "symfony/process": "^5"
             },
-            "time": "2021-09-13T08:19:44+00:00",
+            "time": "2022-08-20T06:45:11+00:00",
             "type": "composer-plugin",
             "extra": {
                 "class": "Composer\\Installers\\Plugin",
                 "branch-alias": {
-                    "dev-main": "1.x-dev"
-                }
+                    "dev-main": "2.x-dev"
+                },
+                "plugin-modifies-install-path": true
             },
             "installation-source": "dist",
             "autoload": {
@@ -181,7 +179,6 @@
             "description": "A multi-framework Composer library installer",
             "homepage": "https://composer.github.io/installers/",
             "keywords": [
-                "Craft",
                 "Dolibarr",
                 "Eliasis",
                 "Hurad",
@@ -202,7 +199,6 @@
                 "Whmcs",
                 "WolfCMS",
                 "agl",
-                "aimeos",
                 "annotatecms",
                 "attogram",
                 "bitrix",
@@ -221,7 +217,6 @@
                 "grav",
                 "installer",
                 "itop",
-                "joomla",
                 "known",
                 "kohana",
                 "laravel",
@@ -230,6 +225,7 @@
                 "magento",
                 "majima",
                 "mako",
+                "matomo",
                 "mediawiki",
                 "miaoxing",
                 "modulework",
@@ -249,9 +245,7 @@
                 "silverstripe",
                 "sydes",
                 "sylius",
-                "symfony",
                 "tastyigniter",
-                "typo3",
                 "wordpress",
                 "yawik",
                 "zend",
@@ -259,7 +253,7 @@
             ],
             "support": {
                 "issues": "https://github.com/composer/installers/issues",
-                "source": "https://github.com/composer/installers/tree/v1.12.0"
+                "source": "https://github.com/composer/installers/tree/v2.2.0"
             },
             "funding": [
                 {
@@ -1679,7 +1673,7 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/advancedqueue"
             },
-            "install-path": "../../modules/contrib/advancedqueue"
+            "install-path": "../../modules/advancedqueue"
         },
         {
             "name": "drupal/audit_log",
@@ -1742,7 +1736,7 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/audit_log"
             },
-            "install-path": "../../modules/contrib/audit_log"
+            "install-path": "../../modules/audit_log"
         },
         {
             "name": "drupal/block_aria_landmark_roles",
@@ -1793,7 +1787,7 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/block_aria_landmark_roles"
             },
-            "install-path": "../../modules/contrib/block_aria_landmark_roles"
+            "install-path": "../../modules/block_aria_landmark_roles"
         },
         {
             "name": "drupal/core",
@@ -2260,7 +2254,7 @@
                 "issues": "https://gitlab.com/drupalspoons/devel/-/issues",
                 "slack": "https://drupal.slack.com/archives/C012WAW1MH6"
             },
-            "install-path": "../../modules/contrib/devel"
+            "install-path": "../../modules/devel"
         },
         {
             "name": "drupal/queue_ui",
@@ -2346,7 +2340,58 @@
                 "source": "https://git.drupalcode.org/project/queue_ui",
                 "issues": "https://www.drupal.org/project/issues/queue_ui"
             },
-            "install-path": "../../modules/contrib/queue_ui"
+            "install-path": "../../modules/queue_ui"
+        },
+        {
+            "name": "drupal/simplei",
+            "version": "1.2.0",
+            "version_normalized": "1.2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/simplei.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/simplei-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "6f4af74a3215a0f7c989eb24f1620c5ea3ba79e4"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1581970320",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ki",
+                    "homepage": "https://www.drupal.org/user/292047"
+                },
+                {
+                    "name": "mmbk",
+                    "homepage": "https://www.drupal.org/user/3023659"
+                }
+            ],
+            "description": "Environment Indicator, Super Light.",
+            "homepage": "https://www.drupal.org/project/simplei",
+            "support": {
+                "source": "https://git.drupalcode.org/project/simplei"
+            },
+            "install-path": "../../modules/simplei"
         },
         {
             "name": "drupal/ultimate_cron",
@@ -2418,7 +2463,7 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/ultimate_cron"
             },
-            "install-path": "../../modules/contrib/ultimate_cron"
+            "install-path": "../../modules/ultimate_cron"
         },
         {
             "name": "drupal/views_bulk_operations",
@@ -2487,7 +2532,7 @@
                 "issues": "https://www.drupal.org/project/issues/views_bulk_operations?version=8.x",
                 "docs": "https://www.drupal.org/docs/8/modules/views-bulk-operations-vbo"
             },
-            "install-path": "../../modules/contrib/views_bulk_operations"
+            "install-path": "../../modules/views_bulk_operations"
         },
         {
             "name": "drush/drush",

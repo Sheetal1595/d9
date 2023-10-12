@@ -47,6 +47,12 @@
         "sort-packages": true
     },
     "extra": {
+        "enable-patching": true,
+        "patches": {
+            "drupal/custom_patch": {
+                "Comments are not filtered on language": "abc.patch"
+            }
+         },
         "drupal-scaffold": {
             "locations": {
                 "web-root": "./"

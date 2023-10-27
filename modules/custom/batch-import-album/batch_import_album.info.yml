@@ -1,0 +1,7 @@
+name: Batch import album
+type: module
+description: Shows how to batch import with interaction
+# core: 9.x
+version: 1.0
+core_version_requirement: ^9 
+package: STEFVANLOOVEREN.ME

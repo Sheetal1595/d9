@@ -1,0 +1,13 @@
+diff --git a/modules/contrib/simplei/simplei.module b/modules/contrib/simplei/simplei.module
+index 94087266..23acf118 100644
+--- a/modules/contrib/simplei/simplei.module
++++ b/modules/contrib/simplei/simplei.module
+@@ -6,7 +6,7 @@
+  */
+ 
+ use Drupal\Core\Site\Settings;
+-
++abc 
+ /**
+  * @file
+  * Simple Environment indicator.

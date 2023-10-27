@@ -1,0 +1,9 @@
+batch_import_album.albumbatch:
+  path: '/batch-import-album'
+  defaults:
+    _title: 'Import album'
+    _form: '\Drupal\batch_import_album\Form\ImportForm'
+  requirements:
+    _permission: 'access content'
+
+

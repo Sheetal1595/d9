@@ -1,0 +1,8 @@
+batch_process.delete_node_example:
+  path: '/batch_process/process'
+  defaults:
+    _form: '\Drupal\batch_process\Form\batchProcessForm'
+    _title: 'Batch Example'
+  requirements:
+    _permission: 'access content'
+

@@ -131,6 +131,7 @@ class ComposerStaticInitdefd8e83b18a891fd46c31ed66182f21
         'D' => 
         array (
             'Drush\\' => 6,
+            'Drupal\\drush9_batch_processing\\' => 31,
             'Drupal\\Driver\\' => 14,
             'Drupal\\Core\\' => 12,
             'Drupal\\Composer\\Plugin\\VendorHardening\\' => 39,
@@ -391,6 +392,10 @@ class ComposerStaticInitdefd8e83b18a891fd46c31ed66182f21
         'Drush\\' => 
         array (
             0 => __DIR__ . '/..' . '/drush/drush/src',
+        ),
+        'Drupal\\drush9_batch_processing\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/drush/Commands/contrib/drush9_batch_processing/src',
         ),
         'Drupal\\Driver\\' => 
         array (

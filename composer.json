@@ -15,8 +15,8 @@
         }
     ],
     "require": {
-        "composer/installers": "^1.9",
-        "cweagans/composer-patches": "~1.0",
+        "composer/installers": "*",
+        "cweagans/composer-patches": "^1.7",
         "drupal/advancedqueue": "^1.0@RC",
         "drupal/audit_log": "^3.0@alpha",
         "drupal/block_aria_landmark_roles": "^2.0",
@@ -25,10 +25,13 @@
         "drupal/core-recommended": "^9.4",
         "drupal/core-vendor-hardening": "^9.4",
         "drupal/devel": "^5.1",
+        "drupal/drush9_batch_processing": "1.1",
         "drupal/queue_ui": "^3.1",
+        "drupal/simplei": "1.2",
         "drupal/ultimate_cron": "^2.0@alpha",
         "drupal/views_bulk_operations": "^4.2",
-        "drush/drush": "^11.6"
+        "drush/drush": "^11.6",
+        "guzzlehttp/guzzle": "6.5.8"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -50,7 +53,7 @@
         "enable-patching": true,
         "patches": {
             "drupal/patch_module": {
-                "Comments are not filtered on language": "my_patch.patch"
+                "patch_module": "my_patch.patch"
             }
          },
         "drupal-scaffold": {

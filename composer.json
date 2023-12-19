@@ -26,12 +26,14 @@
         "drupal/core-vendor-hardening": "^9.4",
         "drupal/devel": "^5.1",
         "drupal/drush9_batch_processing": "1.1",
+        "drupal/paragraphs": "^1.16",
         "drupal/queue_ui": "^3.1",
         "drupal/simplei": "1.2",
         "drupal/ultimate_cron": "^2.0@alpha",
         "drupal/views_bulk_operations": "^4.2",
         "drush/drush": "^11.6",
-        "guzzlehttp/guzzle": "6.5.8"
+        "guzzlehttp/guzzle": "6.5.8",
+        "phpoffice/phpspreadsheet": "^1.29"
     },
     "conflict": {
         "drupal/drupal": "*"

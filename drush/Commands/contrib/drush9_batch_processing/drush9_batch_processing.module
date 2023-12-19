@@ -1,0 +1,37 @@
+<?php
+
+/**
+ * @file
+ * Contains drush9_batch_processing.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function drush9_batch_processing_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the entity_clone module.
+    case 'help.page.drush9_batch_processing':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('An example about: How to Run Batch Processing with a Custom Drush 9 Command in Drupal 8 / 9?') . '</p>';
+      $output .= '<p>' . t('This is a simple example of creating a custom Drush 9 command to launch a batch process in Drupal 8 / 9.') . '</p>';
+      $output .= '<h3>' . t('Introduction') . '</h3>';
+      $output .= '<p>' . t('Batch processing is usually an important aspect of any Drupal project and even more when we need to process huge amounts of data.') . '</p>';
+      $output .= '<p>' . t('The main advantage of using batch is that it allows large amounts of data to be processed into small chunks or page requests that run without any manual intervention. Rather than use a single page load to process lots of data, the batch API allows the data to be processed as number of small page requests.') . '</p>';
+      $output .= '<p>' . t('Using batch processing, we divide a large process into small pieces, each one of them executed as a separate page request, thereby avoiding stress on the server. This means that we can easily process 10,000 items without using up all of the server resources in a single page load.') . '</p>';
+      $output .= '<p>' . t('This helps to ensure that the processing is not interrupted due to PHP timeouts, while users are still able to receive feedback on the progress of the ongoing operations.') . '</p>';
+      $output .= '<h3>' . t('Usage') . '</h3>';
+      $output .= '<p>' . t('1. Create a BatchService class for the batch operations') . '</p>';
+      $output .= '<p>' . t('2. Create the custom Drush 9 command to launch the batch') . '</p>';
+      $output .= '<p>' . t('3. Bonus: Run the Drush command from crontab') . '</p>';
+      return $output;
+
+    default:
+      return;
+
+  }
+}
+

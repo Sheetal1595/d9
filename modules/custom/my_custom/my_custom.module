@@ -1,0 +1,15 @@
+<?php
+/**
+ * Implements hook_theme().
+ */
+function my_custom_theme($existing, $type, $theme, $path) {
+  return [
+    'mytemplate' => [
+      'template' => 'mytemplate',
+        'variables' => array(
+          'items' => [],
+            'title' => ''
+            )
+    ],
+  ];
+}

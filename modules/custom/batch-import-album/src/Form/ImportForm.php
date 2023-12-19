@@ -46,7 +46,7 @@ class ImportForm extends FormBase {
 
     $host = \Drupal::request()->getHost();
     //  $url = $host . '/d9/' . drupal_get_path('module', 'batch_import_album') . '/docs/album.json';
-    echo $url="https://jsonplaceholder.typicode.com/photos";
+    echo $url = "https://jsonplaceholder.typicode.com/photos";
     // echo "<pre>";print_r($url);die;
     $request = \Drupal::httpClient()->get($url);
     $body = $request->getBody();

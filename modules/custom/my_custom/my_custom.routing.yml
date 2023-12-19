@@ -1,0 +1,22 @@
+my_custom.simple_custom_module:
+  path: '/simple-custom-form'
+  defaults:
+    _form: '\Drupal\my_custom\Form\SimpleCustomForm'
+  requirements:
+    _access: 'TRUE'
+
+
+contact.add_data:
+  path: 'display'
+  defaults:
+    _controller: 'Drupal\my_custom\Controller\Display::showdata'
+    _title: 'Display'
+  requirements:
+    _permission: 'access content'
+
+my_custom.exports.articles:
+ path: '/exports/articles'
+ defaults:
+   _controller: '\Drupal\my_custom\Controller\MyCSVReport::build'
+ requirements:
+   _permission: 'access content'    

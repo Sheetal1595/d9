@@ -1,0 +1,7 @@
+export_excel.example:
+  path: '/export-excel/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\export_excel\Controller\ExportExcelController::build'
+  requirements:
+    _permission: 'access content'

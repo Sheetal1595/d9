@@ -1,0 +1,6 @@
+name: export_excel
+type: module
+description: The export excel controller.
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9

@@ -1,0 +1,36 @@
+<?php
+function my_custom_schema() {
+  $schema['employee'] = array(
+    'description' => 'Stores value in custom table',
+    'fields' => array(
+      'pid' => array(
+        'type' => 'serial',
+        'not null' => TRUE,
+        'description' => 'Primary Key: Unique id for employee',
+      ),
+      'name' => [
+        'type' => 'varchar',
+        'length' => 255
+    ],
+    'email' => [
+        'type' => 'varchar',
+        'length' => 255
+    ],
+      'number' => array(
+        'type' => 'varchar',
+        'length' => 15,
+      ),
+    ),
+    'primary key' => array('pid'),
+  );
+
+  
+ 
+  return $schema;
+}
+
+
+function my_custom_install()
+{
+  $db_connection = \Drupal::database();
+}

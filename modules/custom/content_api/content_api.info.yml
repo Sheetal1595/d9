@@ -1,0 +1,7 @@
+name: Content API
+type: module
+description: Custom RESTful API module with GET/POST/PUT/DELETE etc.. method examples.
+# core: 9.x
+version: 1.0
+core_version_requirement: ^9 
+

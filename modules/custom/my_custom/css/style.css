@@ -1,0 +1,28 @@
+/* .th {
+    position: relative;
+    box-sizing: border-box;
+    height: 3rem;
+    padding: 0.5rem 1rem;
+    text-align: left;
+    color: #cd37af;
+    background: #f3f4f9;
+    line-height: 1.25rem;
+}
+.btn btn-infos{
+    color: #cd37af;
+
+}
+.page-title {
+    display: inline-block;
+    margin: 0;
+    color: blue;
+    font-size: 2.027rem;
+    -webkit-font-smoothing: antialiased;
+} */
+.unfixed-table{
+    color:blue;
+}
+.body {
+    color: red;
+    background: #fff;
+}

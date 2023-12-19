@@ -1,0 +1,15 @@
+<div class="table-horizontal-container">
+<div class="text-center">
+                        <a href="exports/articles" class="btn btn-infos">Export CSV</a>
+                        <a href="simple-custom-form" class="btn btn-light">Register</a>
+                    </div>
+    <table class="unfixed-table">
+      <thead>
+        <tr><th>Name</th><th>Email</th><th>Phone</th></tr>
+      </thead>
+      <tbody>
+	    {% for result in items %}
+        <tr><th>{{ result.name }}</th><td>{{ result.email }}</td><td>{{ result.number }}</td></tr>
+       {% endfor %}
+      </tbody>
+    </table>
